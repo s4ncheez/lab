@@ -5,7 +5,8 @@ using namespace std;
 using namespace Class;
 
 int main() {
-    File_stream fin{"testlab.txt"};
+    //File_stream fin{"testlab.txt"};
+    File_stream fin{};
     bool cond = fin.open();
     cout << cond << endl;
     string line = fin.get_next_word();
