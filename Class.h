@@ -12,7 +12,8 @@ namespace Class {
         string filename;
         ifstream file;
     public:
-        explicit File_stream(string name);
+        //File_stream();
+        explicit File_stream(string name = "default.txt") : filename(name) {}
         bool open();
         bool close();
         string getname();
