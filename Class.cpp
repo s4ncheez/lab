@@ -6,7 +6,9 @@
 using namespace std;
 
 namespace Class {
-    File_stream::File_stream(string name) : filename(name) {}
+    //File_stream::File_stream() : filename() {}
+
+    //File_stream::File_stream(string name = "default.txt") {}
 
     bool File_stream::open() {
         file.open(filename, ifstream::in);
@@ -67,4 +69,5 @@ namespace Class {
             return "";
         }
     }
+
 }
